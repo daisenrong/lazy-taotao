@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lazy-commons" />
+        <module name="lazy-manager" />
+        <module name="lazy-utils" />
+        <module name="lazy-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lazy" target="1.7" />
+      <module name="lazy-commons" target="1.7" />
+      <module name="lazy-main" target="1.7" />
+      <module name="lazy-manager" target="1.7" />
+      <module name="lazy-utils" target="1.6" />
+      <module name="lazy-web" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
