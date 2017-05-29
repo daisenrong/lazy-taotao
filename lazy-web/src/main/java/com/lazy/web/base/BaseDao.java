@@ -26,15 +26,15 @@ public class BaseDao<T> extends BaseBean<T> {
 
     protected RowMapper<Content> contentRowMapper=new BeanPropertyRowMapper<Content>(Content.class);
     protected RowMapper<ContentCategory> contentCategory=new BeanPropertyRowMapper<ContentCategory>(ContentCategory.class);
-    protected RowMapper<Item> item=new BeanPropertyRowMapper<Item>(Item.class);
-    protected RowMapper<ItemCat> itemCat=new BeanPropertyRowMapper<ItemCat>(ItemCat.class);
-    protected RowMapper<ItemDesc> itemDesc=new BeanPropertyRowMapper<ItemDesc>(ItemDesc.class);
-    protected RowMapper<ItemParam> itemParam=new BeanPropertyRowMapper<ItemParam>(ItemParam.class);
-    protected RowMapper<ItemParamItem> itemParamItem=new BeanPropertyRowMapper<ItemParamItem>(ItemParamItem.class);
-    protected RowMapper<Order> order=new BeanPropertyRowMapper<Order>(Order.class);
-    protected RowMapper<OrderItem> orderItem=new BeanPropertyRowMapper<OrderItem>(OrderItem.class);
-    protected RowMapper<OrderShipping> orderShipping=new BeanPropertyRowMapper<OrderShipping>(OrderShipping.class);
-    protected RowMapper<User> user=new BeanPropertyRowMapper<User>(User.class);
+    protected RowMapper<Item> itemRowMapper=new BeanPropertyRowMapper<Item>(Item.class);
+    protected RowMapper<ItemCat> itemCatRowMapper=new BeanPropertyRowMapper<ItemCat>(ItemCat.class);
+    protected RowMapper<ItemDesc> itemDescRowMapper=new BeanPropertyRowMapper<ItemDesc>(ItemDesc.class);
+    protected RowMapper<ItemParam> itemParamRowMapper=new BeanPropertyRowMapper<ItemParam>(ItemParam.class);
+    protected RowMapper<ItemParamItem> itemParamItemRowMapper=new BeanPropertyRowMapper<ItemParamItem>(ItemParamItem.class);
+    protected RowMapper<Order> orderRowMapper=new BeanPropertyRowMapper<Order>(Order.class);
+    protected RowMapper<OrderItem> orderItemRowMapper=new BeanPropertyRowMapper<OrderItem>(OrderItem.class);
+    protected RowMapper<OrderShipping> orderShippingRowMapper=new BeanPropertyRowMapper<OrderShipping>(OrderShipping.class);
+    protected RowMapper<User> userRowMapper=new BeanPropertyRowMapper<User>(User.class);
 
 
     public Long addCourse(String sql, Object[] o) {

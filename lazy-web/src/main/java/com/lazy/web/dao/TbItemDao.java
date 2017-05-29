@@ -15,6 +15,6 @@ import java.util.List;
 public interface TbItemDao {
     Item getTbItemById(Long id);
     List<Item> getTbItems();
-    List<Item> getTbItems(Long ids);
+    List<Item> getTbItems(Long[] ids);
 
 }

@@ -18,28 +18,54 @@ import java.util.List;
  * Version: 0.1
  * Info: @TODO:...
  */
-public class ItemDaoImpl extends BaseDao<Item> implements TbItemDao {
+public class ItemDaoImpl extends BaseDao<ItemDaoImpl> implements TbItemDao {
     @Override
     public Item getTbItemById(Long id) {
-        return null;
+        Item item = null;
+        try {
+            item = jdbcTemplate.queryForObject("SELECT * FROM tb_item WHERE id=?", itemRowMapper,id);
+        } catch (Exception e) {
+            this.writeLog("ItemDaoImpl.getTbItemById Exception: "+e);
+        }
+        return item;
     }
 
     @Override
     public List<Item> getTbItems() {
-        return null;
+        List<Item> items=null;
+        try{
+            items=jdbcTemplate.query("select * from tb_item",itemRowMapper);
+        }catch (Exception e){
+            this.writeLog("ItemDaoImpl.getTbItems Exception:"+e);
+        }
+        return items;
     }
 
     @Override
-    public List<Item> getTbItems(Long ids) {
+    public List<Item> getTbItems(Long[] ids) {
         return null;
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:conf/app*");
         System.out.println(ctx);
-        jdbcTemplate= (JdbcTemplate) ctx.getBean("jdbcTemplate");
-        Item item = jdbcTemplate.queryForObject("select * from tb_item where id=?", new BeanPropertyRowMapper<Item>(Item.class), 562379);
-        System.out.println(item);
+        jdbcTemplate = (JdbcTemplate) ctx.getBean("jdbcTemplate");
+        //Item item = jdbcTemplate.queryForObject("select * from tb_item where id=?",itemRowMapper, 562379);
+        //List<Integer> integers = jdbcTemplate.queryForList("SELECT COUNT(1) FROM tb_item where id>? and price>?", Integer.class, 536563, 100);
+        ////jdbcTemplate.queryForList("SELECT id,title FROM tb_item",new Object[]{}, new int[Integer.class,String.class],Item.class);
+        ////jdbcTemplate.queryFo
+        //
+        //List<Item> items = jdbcTemplate.query("select * from tb_item", itemRowMapper);
+        Long[] ids={562379L,562377L};
+        try {
+            List<Item> item = jdbcTemplate.query("select * from tb_item where id in (?)", itemRowMapper,ids.toString());
+            System.out.println(ids.toString());
+            System.out.println(item);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
+        //System.out.println(items.size());
     }
 }
