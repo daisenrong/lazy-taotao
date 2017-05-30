@@ -2,10 +2,10 @@ package com.lazy.manager.pojo;
 
 import java.util.Date;
 
-public class TbItemParam {
+public class ItemParamItem {
     private Long id;
 
-    private Long itemCatId;
+    private Long itemId;
 
     private Date created;
 
@@ -21,12 +21,12 @@ public class TbItemParam {
         this.id = id;
     }
 
-    public Long getItemCatId() {
-        return itemCatId;
+    public Long getItemId() {
+        return itemId;
     }
 
-    public void setItemCatId(Long itemCatId) {
-        this.itemCatId = itemCatId;
+    public void setItemId(Long itemId) {
+        this.itemId = itemId;
     }
 
     public Date getCreated() {

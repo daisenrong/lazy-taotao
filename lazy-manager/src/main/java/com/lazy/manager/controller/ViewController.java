@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * Coding......
- * Created by D.SR on 2017/3/13.
+ * Created by D.SR on 2017/3/7.
  */
 @Controller
 public class ViewController extends BaseController<ViewController> {
@@ -15,10 +15,14 @@ public class ViewController extends BaseController<ViewController> {
     public String showHome() {
         return "home/index";
     }
+    @RequestMapping("404")
+    public String show404() {
+        return "public/404";
+    }
 
     @RequestMapping("view/{view}")
     public String showView(@PathVariable String view) {
-        return view;
+        return view + ".jsp";
     }
 
     @RequestMapping("view/{module}/{view}")

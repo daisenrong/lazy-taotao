@@ -1,6 +1,6 @@
 package com.lazy.manager.pojo;
 
-public class TbOrderItem {
+public class OrderItem {
     private String id;
 
     private String itemId;

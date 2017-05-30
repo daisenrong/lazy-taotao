@@ -2,7 +2,7 @@ package com.lazy.manager.base;
 
 
 import com.lazy.commons.base.BaseBean;
-import com.lazy.manager.service.MenuService;
+import com.lazy.manager.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -19,8 +19,18 @@ import java.net.URLDecoder;
  */
 @Controller
 public class BaseController<T> extends BaseBean<T> {
+
     @Autowired
-    protected MenuService menuService;
+    protected ItemService itemService;
+
+    /**
+     * AJAX访问返回操作成功状态标识符
+     */
+    protected static final String STATUS_SUCCESS = "success";
+    /**
+     * AJAX访问返回操作失败状态标识符
+     */
+    protected static final String STATUS_ERROR = "error";
 
     protected HttpServletRequest request;
     protected HttpServletResponse response;
@@ -166,5 +176,6 @@ public class BaseController<T> extends BaseBean<T> {
     //    String json = JSON.toJSONString(content, SerializerFeature.WriteDateUseDateFormat);
     //    ajax(json, "application/json");
     //}
+
 
 }

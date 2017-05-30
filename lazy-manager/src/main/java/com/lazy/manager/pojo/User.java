@@ -2,7 +2,7 @@ package com.lazy.manager.pojo;
 
 import java.util.Date;
 
-public class TbUser {
+public class User {
     private Long id;
 
     private String username;

@@ -2,7 +2,7 @@ package com.lazy.manager.pojo;
 
 import java.util.Date;
 
-public class TbContentCategory {
+public class ItemCat {
     private Long id;
 
     private Long parentId;

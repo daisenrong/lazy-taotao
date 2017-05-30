@@ -2,7 +2,7 @@ package com.lazy.manager.base;
 
 
 import com.lazy.commons.base.BaseBean;
-import com.lazy.manager.dao.MenuDao;
+import com.lazy.manager.dao.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,5 +13,5 @@ import org.springframework.stereotype.Service;
 @Service
 public class BaseService<T> extends BaseBean<T> {
     @Autowired
-    protected MenuDao menuDao;
+    protected ItemDao itemDao;
 }

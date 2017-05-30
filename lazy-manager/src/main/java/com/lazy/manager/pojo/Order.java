@@ -2,7 +2,7 @@ package com.lazy.manager.pojo;
 
 import java.util.Date;
 
-public class TbOrder {
+public class Order {
     private String orderId;
 
     private String payment;
