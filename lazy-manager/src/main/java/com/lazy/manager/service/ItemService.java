@@ -1,6 +1,7 @@
 package com.lazy.manager.service;
 
 import com.lazy.manager.pojo.Item;
+import com.lazy.manager.pojo.PageInfoDataGrid;
 
 import java.util.List;
 
@@ -14,6 +15,7 @@ import java.util.List;
  */
 public interface ItemService {
     Item getTbItemById(Long id);
+    PageInfoDataGrid getItemList(long page,long rows);
     List<Item> getTbItems();
     List<Item> getTbItems(Long[] ids);
 }

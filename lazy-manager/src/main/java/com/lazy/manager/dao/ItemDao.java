@@ -1,6 +1,7 @@
 package com.lazy.manager.dao;
 
 import com.lazy.manager.pojo.Item;
+import com.lazy.manager.pojo.PageInfoDataGrid;
 
 import java.util.List;
 
@@ -13,8 +14,10 @@ import java.util.List;
  * Info: @TODO:...
  */
 public interface ItemDao {
-    Item getTbItemById(Long id);
-    List<Item> getTbItems();
-    List<Item> getTbItems(Long[] ids);
+    Item getItemById(Long id);
+    Long getItemCount();
+    PageInfoDataGrid getItems(Long currPage,Long pageSize);
+    List<Item> getItems();
+    List<Item> getItems(Long[] ids);
 
 }

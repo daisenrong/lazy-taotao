@@ -19,7 +19,6 @@
         <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
     </listener>
 
-
     <!-- 加载spring容器 -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
@@ -98,26 +97,26 @@
         <url-pattern>/druid/*</url-pattern>
     </servlet-mapping>
 
-    <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
-        <welcome-file>index.htm</welcome-file>
-        <welcome-file>index.jsp</welcome-file>
-        <welcome-file>default.html</welcome-file>
-        <welcome-file>default.htm</welcome-file>
-        <welcome-file>default.jsp</welcome-file>
-    </welcome-file-list>
+    <!--<welcome-file-list>-->
+        <!--<welcome-file>index.html</welcome-file>-->
+        <!--<welcome-file>index.htm</welcome-file>-->
+        <!--<welcome-file>index.jsp</welcome-file>-->
+        <!--<welcome-file>default.html</welcome-file>-->
+        <!--<welcome-file>default.htm</welcome-file>-->
+        <!--<welcome-file>default.jsp</welcome-file>-->
+    <!--</welcome-file-list>-->
     <!--404,403,500-->
     <error-page>
         <error-code>403</error-code>
-        <location>/404.jsp</location>
+        <location>/404</location>
     </error-page>
     <error-page>
         <error-code>404</error-code>
-        <location>/404.jsp</location>
+        <location>/404</location>
     </error-page>
     <error-page>
         <error-code>500</error-code>
-        <location>/404.jsp</location>
+        <location>/404</location>
     </error-page>
 
     <!-- 解决资源拦截问题-->

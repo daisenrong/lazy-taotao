@@ -1,7 +1,9 @@
 package com.lazy.manager.service.impl;
 
+import com.lazy.commons.paging.PageBean;
 import com.lazy.manager.base.BaseService;
 import com.lazy.manager.pojo.Item;
+import com.lazy.manager.pojo.PageInfoDataGrid;
 import com.lazy.manager.service.ItemService;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +21,14 @@ import java.util.List;
 public class ItemServiceImpl extends BaseService<ItemServiceImpl> implements ItemService {
     @Override
     public Item getTbItemById(Long id) {
-        return itemDao.getTbItemById(id);
+        return itemDao.getItemById(id);
+    }
+
+    @Override
+    public PageInfoDataGrid getItemList(long page, long rows) {
+
+
+        return itemDao.getItems(page,rows);
     }
 
     @Override

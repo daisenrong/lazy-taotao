@@ -5,7 +5,7 @@ import com.lazy.commons.base.BaseBean;
 /**
  * Coding......
  * Created by D.SR on 2017/3/7.
- * version: 1.0
+ * version: 1.1
  */
 public class PageBean extends BaseBean<PageBean> {
     private long totalPage; // 总页数
