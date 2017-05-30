@@ -1,12 +1,12 @@
 package com.lazy.web.dao.impl;
 
 import com.lazy.web.base.BaseDao;
-import com.lazy.web.dao.TbItemDao;
+import com.lazy.web.dao.ItemDao;
 import com.lazy.web.pojo.Item;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -18,7 +18,8 @@ import java.util.List;
  * Version: 0.1
  * Info: @TODO:...
  */
-public class ItemDaoImpl extends BaseDao<ItemDaoImpl> implements TbItemDao {
+@Repository
+public class ItemDaoImpl extends BaseDao<ItemDaoImpl> implements ItemDao {
     @Override
     public Item getTbItemById(Long id) {
         Item item = null;

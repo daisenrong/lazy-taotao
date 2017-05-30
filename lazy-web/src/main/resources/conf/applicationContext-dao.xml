@@ -17,7 +17,6 @@
     <!-- 数据库连接池 -->
     <!-- 加载配置文件 -->
     <context:property-placeholder location="classpath:prop/db.properties"/>
-    <import resource="test.xml"></import>
     <!-- 数据库连接池 -->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <property name="url" value="${jdbc.url}"/>

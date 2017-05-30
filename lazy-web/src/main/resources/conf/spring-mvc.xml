@@ -33,13 +33,11 @@
     </bean>
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/page/"/>
+        <property name="prefix" value="/WEB-INF/view/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
     <!--添加静态资源地址，不进行拦截-->
     <mvc:resources mapping="/static/**" location="/static/"/>
-    <!--logo大赛静态地址-->
-    <!--<mvc:resources mapping="/static/**" location="/static/"/>-->
 
 
     <mvc:interceptors>

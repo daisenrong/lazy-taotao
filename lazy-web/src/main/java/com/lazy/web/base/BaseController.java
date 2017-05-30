@@ -20,7 +20,8 @@ import java.net.URLDecoder;
 @Controller
 public class BaseController<T> extends BaseBean<T> {
 
-  
+    @Autowired
+    protected ItemService itemService;
 
     /**
      * AJAX访问返回操作成功状态标识符
