@@ -14,4 +14,6 @@ import org.springframework.stereotype.Service;
 public class BaseService<T> extends BaseBean<T> {
     @Autowired
     protected ItemDao itemDao;
+    @Autowired
+    protected ItemCatDao itemCatDao;
 }
