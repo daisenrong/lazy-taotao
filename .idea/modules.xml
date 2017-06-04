@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/lazy.iml" filepath="$PROJECT_DIR$/lazy.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lazy-commons/lazy-commons.iml" filepath="$PROJECT_DIR$/lazy-commons/lazy-commons.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lazy-manager/lazy-manager.iml" filepath="$PROJECT_DIR$/lazy-manager/lazy-manager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lazy-utils/lazy-utils.iml" filepath="$PROJECT_DIR$/lazy-utils/lazy-utils.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lazy-web/lazy-web.iml" filepath="$PROJECT_DIR$/lazy-web/lazy-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lazy-taotao.iml" filepath="$PROJECT_DIR$/lazy-taotao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lazy-taotao-manager/lazy-taotao-manager.iml" filepath="$PROJECT_DIR$/lazy-taotao-manager/lazy-taotao-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lazy-taotao-web/lazy-taotao-web.iml" filepath="$PROJECT_DIR$/lazy-taotao-web/lazy-taotao-web.iml" />
     </modules>
   </component>
 </project>

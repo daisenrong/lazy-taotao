@@ -3,6 +3,8 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/lazy-main" />
     <file type="web" url="file://$PROJECT_DIR$/lazy-manager" />
+    <file type="web" url="file://$PROJECT_DIR$/lazy-taotao-manager" />
+    <file type="web" url="file://$PROJECT_DIR$/lazy-taotao-web" />
     <file type="web" url="file://$PROJECT_DIR$/lazy-web" />
   </component>
   <component name="JavadocGenerationManager">
@@ -27,7 +29,15 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/lazy-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/lazy-web/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/lazy-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/lazy-utils/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="false" project-jdk-name="1.7" project-jdk-type="JavaSDK">

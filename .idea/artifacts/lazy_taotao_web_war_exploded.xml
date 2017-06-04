@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="lazy-web:war exploded">
-    <output-path>$PROJECT_DIR$/lazy-web/target/lazy-web</output-path>
+  <artifact type="exploded-war" name="lazy-taotao-web:war exploded">
+    <output-path>$PROJECT_DIR$/lazy-taotao-web/target/lazy-web</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -41,7 +41,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/lazy-web/target/lazy-web/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/lazy-taotao-web/target/lazy-web/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="lazy-taotao-web/web/Web" />
     </root>

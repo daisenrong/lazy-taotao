@@ -5,13 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.lazy</groupId>
-    <artifactId>lazy</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>lazy-taotao</artifactId>
+    <version>1.0</version>
     <modules>
-        <module>lazy-utils</module>
-        <module>lazy-manager</module>
-        <module>lazy-web</module>
-        <module>lazy-commons</module>
+        <module>lazy-taotao-manager</module>
+        <module>lazy-taotao-web</module>
     </modules>
 
 
