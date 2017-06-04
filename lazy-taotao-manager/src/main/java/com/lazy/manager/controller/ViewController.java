@@ -15,6 +15,7 @@ public class ViewController extends BaseController<ViewController> {
     public String showHome() {
         return "home/index";
     }
+
     @RequestMapping("404")
     public String show404() {
         return "public/404";

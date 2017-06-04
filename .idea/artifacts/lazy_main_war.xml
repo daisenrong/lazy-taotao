@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="lazy-main:war">
-    <output-path>$PROJECT_DIR$/lazy-main/target</output-path>
-    <root id="archive" name="lazy-manager.war">
-      <element id="artifact" artifact-name="lazy-main:war exploded" />
-    </root>
-  </artifact>
-</component>

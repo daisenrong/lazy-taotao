@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="lazy-taotao-manager:war">
-    <output-path>$PROJECT_DIR$/lazy-taotao-manager/target</output-path>
-    <root id="archive" name="lazy-manager.war">
-      <element id="artifact" artifact-name="lazy-taotao-manager:war exploded" />
-    </root>
-  </artifact>
-</component>

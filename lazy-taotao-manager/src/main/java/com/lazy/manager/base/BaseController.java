@@ -24,6 +24,8 @@ public class BaseController<T> extends BaseBean<T> {
     protected ItemService itemService;
     @Autowired
     protected ItemCatService itemCatService;
+    @Autowired
+    protected PictureService pictureService;
 
     /**
      * AJAX访问返回操作成功状态标识符
