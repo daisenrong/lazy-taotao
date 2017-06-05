@@ -22,4 +22,24 @@
     <mvc:resources mapping="/static/**" location="/static/"/>
 
 
+    <!--<mvc:interceptors>-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/match/**"/>-->
+            <!--<mvc:mapping path="/user/**"/>-->
+            <!--&lt;!&ndash;<mvc:exclude-mapping path="/static/**"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<mvc:exclude-mapping path="/test/**"/>&ndash;&gt;-->
+            <!--<bean class="com.lazy.manager.interceptor.UserInterceptor">-->
+                <!--<property name="allowedPass">-->
+                    <!--<list>-->
+                        <!--<value>/user/page/login</value>-->
+                        <!--<value>/user/page/regist</value>-->
+                        <!--<value>/user/login</value>-->
+                        <!--<value>/user/regist</value>-->
+                        <!--<value>/user/findUserByLoginId</value>-->
+                    <!--</list>-->
+                <!--</property>-->
+            <!--</bean>-->
+        <!--</mvc:interceptor>-->
+    <!--</mvc:interceptors>-->
+
 </beans>
