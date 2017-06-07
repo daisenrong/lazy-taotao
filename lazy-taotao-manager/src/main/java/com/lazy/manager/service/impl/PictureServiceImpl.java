@@ -45,6 +45,8 @@ public class PictureServiceImpl extends BaseBean<PictureServiceImpl> implements 
     public Map uploadPic(MultipartFile uploadFile) {
         Map result = new HashMap();
         try {
+            if(uploadFile==null)
+                this.writeLog("null");
             String oldFilename = uploadFile.getOriginalFilename();
             String fileName = UUID.randomUUID().toString() + oldFilename.substring(oldFilename.lastIndexOf("."));
             String filePath = UtilTime.getCurrDate("yyyy/MM/dd/");

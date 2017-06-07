@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartRequest;
 
 
 import java.util.Map;
@@ -22,7 +23,8 @@ import java.util.Map;
 public class PictureController extends BaseController<PictureController> {
     @RequestMapping("upload")
     @ResponseBody
-    public Map uploadPicture(MultipartFile uploadFile) {
+    public Map uploadPicture(MultipartFile uploadFile, MultipartRequest multipartRequest) {
+        uploadFile=  multipartRequest.getFile("uploadFile");
         Map map = pictureService.uploadPic(uploadFile);
         return map;
     }

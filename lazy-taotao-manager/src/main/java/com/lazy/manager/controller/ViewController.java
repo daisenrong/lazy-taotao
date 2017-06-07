@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ViewController extends BaseController<ViewController> {
     @RequestMapping("/")
     public String showHome() {
-        this.writeLog("dsr");
         return "home/index";
     }
 

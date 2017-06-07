@@ -24,12 +24,12 @@
 
 
 <%--<script src="${ctx}/static/plugins/jquery/jQuery-2.2.0.min.js?v=1.0"></script>--%>
-<script type="text/javascript" src="${ctx}/static/plugins/layui/lay/dest/layui.all.js?v=1.0"></script>
-<script type="text/javascript">
-    //全局系统变量
-    var ctx = "${ctx}";
-    var layer = layui.layer;
-    var laypage = layui.laypage;
-    var laydate = layui.laydate;
+<%--<script type="text/javascript" src="${ctx}/static/plugins/layui/lay/dest/layui.all.js?v=1.0"></script>--%>
+<%--<script type="text/javascript">--%>
+    <%--//全局系统变量--%>
+    <%--var ctx = "${ctx}";--%>
+    <%--var layer = layui.layer;--%>
+    <%--var laypage = layui.laypage;--%>
+    <%--var laydate = layui.laydate;--%>
 
-</script>
+<%--</script>--%>
